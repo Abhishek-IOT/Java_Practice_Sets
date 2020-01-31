@@ -9,13 +9,42 @@ public class Contact {
     private String email;
 
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Contact{");
-        sb.append("FirstName='").append(FirstName).append('\'');
-        sb.append(", lastName='").append(lastName).append('\'');
-        sb.append(", numbers=").append(numbers);
-        sb.append(", email='").append(email).append('\'');
-        sb.append('}');
-        return sb.toString();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("----------\n");
+        stringBuilder.append("first name:").append(getFirstName());
+
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String firstName) {
+        FirstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public List<PhoneNumber> getNumbers() {
+        return numbers;
+    }
+
+    public void setNumbers(List<PhoneNumber> numbers) {
+        this.numbers = numbers;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Contact(String firstName, String lastName, List<PhoneNumber> numbers, String email) {
