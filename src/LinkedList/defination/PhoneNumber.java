@@ -1,5 +1,7 @@
 package LinkedList.defination;
 
+import java.util.Objects;
+
 public class PhoneNumber {
     private int countryCode;
     private int stdCode;
@@ -35,6 +37,22 @@ public class PhoneNumber {
 
     public void setNumber(long number) {
         this.number = number;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PhoneNumber that = (PhoneNumber) o;
+        return countryCode == that.countryCode &&
+                stdCode == that.stdCode &&
+                number == that.number &&
+                isSameCountry == that.isSameCountry;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(countryCode, stdCode, number, isSameCountry);
     }
 
     public boolean isSameCountry() {

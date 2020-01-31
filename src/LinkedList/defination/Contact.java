@@ -2,7 +2,7 @@ package LinkedList.defination;
 
 import java.util.List;
 
-public class Contact {
+public class Contact implements Comparable<Contact> {
     private String FirstName;
     private String lastName;
     private List<PhoneNumber> numbers;
@@ -55,5 +55,9 @@ public class Contact {
         this.lastName = lastName;
         this.numbers = numbers;
         this.email = email;
+    }
+
+    public int compareTo(Contact contact) {
+        return Long.compare(this.getNumbers().get(0));
     }
 }
