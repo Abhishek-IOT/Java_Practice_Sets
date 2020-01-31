@@ -8,4 +8,10 @@ public class Contact {
     private List<PhoneNumber> numbers;
     private String email;
 
+    public Contact(String firstName, String lastName, List<PhoneNumber> numbers, String email) {
+        FirstName = firstName;
+        this.lastName = lastName;
+        this.numbers = numbers;
+        this.email = email;
+    }
 }
