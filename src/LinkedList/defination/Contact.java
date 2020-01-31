@@ -9,9 +9,12 @@ public class Contact {
     private String email;
 
     public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("----------\n");
-        stringBuilder.append("first name:").append(getFirstName());
+        return "----------\n" +
+                "first name:" + getFirstName() + "\n" +
+                "Last name" + getLastName() + "\n" +
+                ("Numbers") + getNumbers() + "\n" +
+                "Email" + getEmail() + "\n";
+
 
     }
 
