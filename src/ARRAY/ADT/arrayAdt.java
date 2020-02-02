@@ -1,7 +1,7 @@
 package ARRAY.ADT;
 
 public interface arrayAdt {
-    public boolean arrayCreated(int size, int arr[]);
+    public boolean arrayCreated(int size);
 
     public int retrieveIndex();
 

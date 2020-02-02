@@ -8,9 +8,10 @@ public class Defination implements arrayAdt {
 
     Scanner scanner = new Scanner(System.in);
 
-    public boolean arrayCreated(int size, int arr[]) {
+    public boolean arrayCreated(int size) {
 
         size = scanner.nextInt();
+        int arr[] = new int[size];
         for (int i = 0; i < size; i++) {
             arr[i] = scanner.nextInt();
         }
@@ -26,7 +27,9 @@ public class Defination implements arrayAdt {
     }
 
     public int storeData() {
-        return 0;
+
+        int size = scanner.nextInt();
+
     }
 
     public int sort() {
