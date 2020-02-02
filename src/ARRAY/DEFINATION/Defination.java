@@ -2,9 +2,23 @@ package ARRAY.DEFINATION;
 
 import ARRAY.ADT.arrayAdt;
 
+import java.util.Scanner;
+
 public class Defination implements arrayAdt {
-    public boolean arrayCreated() {
-        return false;
+
+    Scanner scanner = new Scanner(System.in);
+
+    public boolean arrayCreated(int size, int arr[]) {
+
+        size = scanner.nextInt();
+        for (int i = 0; i < size; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        if (arr.length == 0) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
     public int retrieveIndex() {
