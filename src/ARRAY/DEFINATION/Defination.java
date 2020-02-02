@@ -39,8 +39,19 @@ public class Defination implements arrayAdt {
         }
     }
 
-    public int sort() {
-        return 0;
+    public void sort(int size) {
+        size = scanner.nextInt();
+        int arr[] = new int[size];
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+
+        }
     }
 
     public int countTheElements(int size) {

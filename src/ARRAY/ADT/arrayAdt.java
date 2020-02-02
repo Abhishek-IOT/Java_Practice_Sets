@@ -7,7 +7,7 @@ public interface arrayAdt {
 
     public void storeData(int size);
 
-    public int sort();
+    public void sort(int size);
 
     public int countTheElements(int size);
 
