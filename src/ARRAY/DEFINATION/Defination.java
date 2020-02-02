@@ -26,9 +26,9 @@ public class Defination implements arrayAdt {
         return 0;
     }
 
-    public void storeData() {
+    public void storeData(int size) {
 
-        int size = scanner.nextInt();
+        size = scanner.nextInt();
         size = scanner.nextInt();
         int arr[] = new int[size];
         for (int i = 0; i < size; i++) {
@@ -43,8 +43,8 @@ public class Defination implements arrayAdt {
         return 0;
     }
 
-    public int countTheElements() {
-        return 0;
+    public int countTheElements(int size) {
+        return size;
     }
 
     public int removeAnElement() {

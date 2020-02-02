@@ -5,11 +5,11 @@ public interface arrayAdt {
 
     public int retrieveIndex();
 
-    public void storeData();
+    public void storeData(int size);
 
     public int sort();
 
-    public int countTheElements();
+    public int countTheElements(int size);
 
     public int removeAnElement();
 
