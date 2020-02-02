@@ -26,10 +26,17 @@ public class Defination implements arrayAdt {
         return 0;
     }
 
-    public int storeData() {
+    public void storeData() {
 
         int size = scanner.nextInt();
-
+        size = scanner.nextInt();
+        int arr[] = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        for (int i = 0; i < size; i++) {
+            System.out.println(arr[i]);
+        }
     }
 
     public int sort() {

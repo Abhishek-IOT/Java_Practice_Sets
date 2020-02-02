@@ -5,7 +5,7 @@ public interface arrayAdt {
 
     public int retrieveIndex();
 
-    public int storeData();
+    public void storeData();
 
     public int sort();
 
