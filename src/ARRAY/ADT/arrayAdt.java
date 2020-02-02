@@ -3,7 +3,7 @@ package ARRAY.ADT;
 public interface arrayAdt {
     public boolean arrayCreated(int size);
 
-    public int retrieveIndex();
+    public int retrieveIndex(int size, int element);
 
     public void storeData(int size);
 
