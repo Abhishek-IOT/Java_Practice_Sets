@@ -47,7 +47,15 @@ public class Defination implements arrayAdt {
         return size;
     }
 
-    public int removeAnElement() {
-        return 0;
+    public int removeAnElement(int size, int removeElement) {
+        int arr[] = new int[size];
+        for (int i = 0; i < size; i++) {
+            if (arr[i] == removeElement)
+                arr[i] = 0;
+        }
+        for (int i = 0; i < size; i++) {
+            System.out.println(arr[i]);
+        }
+        return removeElement;
     }
 }

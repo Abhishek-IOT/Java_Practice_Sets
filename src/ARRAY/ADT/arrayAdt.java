@@ -11,6 +11,6 @@ public interface arrayAdt {
 
     public int countTheElements(int size);
 
-    public int removeAnElement();
+    public int removeAnElement(int size, int removeElement);
 
 }
