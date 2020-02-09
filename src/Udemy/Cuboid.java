@@ -10,4 +10,13 @@ public class Cuboid extends Rectangle {
             heigth = 0;
         }
     }
+
+    public double volume() {
+        return getWidth() * getLength() * heigth;
+    }
+
+    public double getHeigth() {
+        return heigth;
+    }
 }
+
