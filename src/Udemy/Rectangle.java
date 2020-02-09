@@ -12,4 +12,13 @@ public class Rectangle {
             length = 0;
         }
     }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getLength() {
+        return length;
+    }
 }
+
