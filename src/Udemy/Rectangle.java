@@ -1,6 +1,11 @@
 package Udemy;
 
 public class Rectangle {
-    private int length;
-    private int width;
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
 }
