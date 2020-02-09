@@ -20,5 +20,9 @@ public class Rectangle {
     public double getLength() {
         return length;
     }
+
+    public double area() {
+        return width * length;
+    }
 }
 
