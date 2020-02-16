@@ -1,0 +1,33 @@
+package LinkedListPractice.defination;
+
+import LinkedListPractice.ADT.LinkedListADT;
+
+public class Defination implements LinkedListADT {
+    @Override
+    public void print() {
+
+    }
+
+
+    private static class Node {
+        Node next = null;
+        int data = 0;
+
+        public Node(int data) {
+            this.data = data;
+        }
+
+        public Node(Node next, int data) {
+            this.next = next;
+            this.data = data;
+        }
+
+        public Node getNext() {
+            return next;
+        }
+
+        public int getData() {
+            return data;
+        }
+    }
+}
