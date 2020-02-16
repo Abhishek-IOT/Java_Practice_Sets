@@ -6,16 +6,27 @@ public class Defination implements LinkedListADT {
     Node head = null;
     int size;
 
+    public Node getNode(int index) {
+        Node response = null;
+        for (int i = 0; i < size; i++) {
+            response = response.getNext();
+        }
+        return response;
+    }
+
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("Defination{");
+        for (int i = 0; i < size; i++) {
+            int data = getNode(i).getData();
+        }
         sb.append('}');
         return sb.toString();
     }
 
     @Override
     public void print() {
-
+        toString();
     }
 
 
