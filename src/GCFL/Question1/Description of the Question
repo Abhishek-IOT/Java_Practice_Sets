@@ -1,0 +1,23 @@
+Given an array A of size N, construct a Product Array P (of same size) such that P is equal to the product of all the elements of A except A[i].
+
+Input Format
+
+The first line is N. The second line contains N elements separated by spaces.
+
+Constraints
+
+1 <= N <= 1000 1 <= Ai <= 20
+
+Output Format
+
+For each testcase, print the Product array P.
+
+Sample Input 0
+
+5
+10 3 5 6 2
+
+
+Sample Output 0
+
+180 600 360 300 900
