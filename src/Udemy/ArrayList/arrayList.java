@@ -15,11 +15,14 @@ public class arrayList {
 
     public void removeData(int index) {
         arrayList.remove(index - 1);
+        if (index > 10 && index < -1) {
+            System.out.println("the index is invalid ");
+        }
     }
 
     public void viewAllData() {
         for (int i = 0; i < arrayList.size(); i++) {
-            System.out.println((i + 1) + arrayList.get(i));
+            System.out.println((i + 1) + ".) " + arrayList.get(i));
         }
     }
 
@@ -37,7 +40,7 @@ public class arrayList {
     public void modifyData(String data, int index) {
         for (int i = 0; i < arrayList.size(); i++) {
             if (i == index) {
-                arrayList.set(index, data);
+                arrayList.set(index - 1, data);
             }
         }
         for (int j = 0; j < arrayList.size(); j++) {
