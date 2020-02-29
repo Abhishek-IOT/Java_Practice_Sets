@@ -23,9 +23,22 @@ public class arrayList {
         for (int i = 0; i < arrayList.size(); i++) {
             if (arrayList.get(i) == data) {
                 System.out.println("data found" + data);
+            } else {
+                System.out.println("data invalid given");
             }
         }
-
     }
 
-}
+    public void modifyData(String data, int index) {
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (i == index) {
+                arrayList.set(index, data);
+            }
+        }
+        for (int j = 0; j < arrayList.size(); j++) {
+            System.out.println("Modified System" + arrayList.get(j));
+        }
+    }
+    }
+
+
