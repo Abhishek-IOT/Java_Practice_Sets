@@ -19,7 +19,11 @@ public class Execution {
                 "Press 6 for exiting from the menu");
 
         while (yo == true) {
-            System.out.println("round=" + (++c));
+            if (c == 0) {
+                System.out.println("round=" + (++c));
+            } else {
+                System.out.println("next round=" + (++c));
+            }
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
