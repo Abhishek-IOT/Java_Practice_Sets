@@ -6,7 +6,10 @@ public class Execution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean yo = true;
+        System.out.println("Enter the array");
+
         arrayList arr = new arrayList();
+        int c = 0;
         System.out.println("Welcome to Abhishek List\n" +
                 "Press 1 for adding the data\n" +
                 "Press 2 for deleting the data\n" +
@@ -14,6 +17,7 @@ public class Execution {
                 "Press 4 for modifying the data\n" +
                 "Press 5 for searching the data\n" +
                 "Press 6 for exiting from the menu");
+
         while (yo == true) {
             int choice = scanner.nextInt();
             switch (choice) {
@@ -22,6 +26,7 @@ public class Execution {
                             "Give the data to be added");
                     String data = scanner.next();
                     arr.addData(data);
+                    arr.viewAllData();
                     break;
                 case 2:
                     System.out.println("You have enter to remove the data\n" +

@@ -3,10 +3,14 @@ package Udemy.ArrayList;
 import java.util.ArrayList;
 
 public class arrayList {
-    private ArrayList<String> arrayList = null;
+    private ArrayList<String> arrayList = new ArrayList<>();
+
+
+
 
     public void addData(String data) {
         arrayList.add(data);
+
     }
 
     public void removeData(int index) {
@@ -20,13 +24,7 @@ public class arrayList {
     }
 
     public void searchingData(String data) {
-        for (int i = 0; i < arrayList.size(); i++) {
-            if (arrayList.get(i) == data) {
-                System.out.println("data found" + data);
-            } else {
-                System.out.println("data invalid given");
-            }
-        }
+        boolean list = arrayList.contains(data);
     }
 
     public void modifyData(String data, int index) {
@@ -40,5 +38,3 @@ public class arrayList {
         }
     }
     }
-
-
