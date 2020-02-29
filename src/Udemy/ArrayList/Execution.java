@@ -59,7 +59,7 @@ public class Execution {
                     arr.searchingData(information);
                     break;
                 case 6:
-                    System.out.println("YOu have entered for ecxiting from the menu thank you");
+                    System.out.println("YOu have entered for exiting from the menu thank you");
                     yo = false;
                     break;
                 default:
