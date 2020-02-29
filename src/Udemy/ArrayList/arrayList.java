@@ -19,5 +19,13 @@ public class arrayList {
         }
     }
 
+    public void searchingData(String data) {
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(i) == data) {
+                System.out.println("data found" + data);
+            }
+        }
+
+    }
 
 }
