@@ -33,9 +33,13 @@ public class Defination implements LinkedListADT {
         return sb.toString();
     }
 
+    public int printReverse(int index) {
+        System.out.println(toString());
+        Node previous = getNode(index);
+        int da = previous.getData();
+        System.out.println(da);
 
-    public void printReverse() {
-
+        return size;
     }
 
     @Override

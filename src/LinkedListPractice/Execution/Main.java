@@ -10,6 +10,6 @@ public class Main {
         defination.addFirst(1);
         defination.addFirst(2);
         defination.addFirst(3);
-        System.out.println(defination);
+        System.out.println(defination.printReverse(3));
     }
 }
