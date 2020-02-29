@@ -19,6 +19,7 @@ public class Execution {
                 "Press 6 for exiting from the menu");
 
         while (yo == true) {
+            System.out.println("round=" + (++c));
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
@@ -41,7 +42,10 @@ public class Execution {
                 case 4:
                     System.out.println("You have entered for modifying the data\n" +
                             "Press  enter the data to be modified and at which index to be mdified");
+
                     int r = scanner.nextInt();
+                    scanner.nextLine();
+                    System.out.println("Enter the data to be modified");
                     String info = scanner.next();
                     arr.modifyData(info, r);
                     break;
