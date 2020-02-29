@@ -14,7 +14,7 @@ public class arrayList {
     }
 
     public void removeData(int index) {
-        arrayList.remove(index);
+        arrayList.remove(index - 1);
     }
 
     public void viewAllData() {
@@ -41,7 +41,7 @@ public class arrayList {
             }
         }
         for (int j = 0; j < arrayList.size(); j++) {
-            System.out.println("Modified System" + arrayList.get(j));
+            System.out.println("Modified System     " + arrayList.get(j));
         }
     }
     }
